@@ -9,7 +9,7 @@ def add_values():
     data = request.json
     if not isinstance(data['num1'], (int, float)) or not isinstance(data['num2'], (int, float)):
         return {'error': 'Bad data, values must be int or float'}, 400
-    return {'result': data['num1'] + data['num2']+10}
+    return {'result': data['num1'] + data['num2']}
 
 
 if __name__ == '__main__':
